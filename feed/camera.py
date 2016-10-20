@@ -122,13 +122,14 @@ class Camera(object):
                 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
                     cv2.CHAIN_APPROX_SIMPLE)
 
-                for c in cnts[0]:
-                    if cv2.contourArea(c) < 5000:
-                        continue
-
-                    (x, y, w, h) = cv2.boundingRect(c)
-                    cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-                    text = "Occupied"
+                #this
+                # for c in cnts[0]:
+                #     if cv2.contourArea(c) < 5000:
+                #         continue
+                #
+                #     (x, y, w, h) = cv2.boundingRect(c)
+                #     cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+                #     text = "Occupied"
 
                 #if text == "Unoccupied":
                 #    cv2.accumulateWeighted(gray, avg, 0.5)
