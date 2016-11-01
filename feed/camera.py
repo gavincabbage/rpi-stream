@@ -6,6 +6,7 @@ import cv2
 import imutils
 import time
 import picamera
+import picamera.array
 
 from feed import app
 
