@@ -9,5 +9,5 @@ def index():
 
 @app.route('/feed')
 def feed():
-    return Response(generate_feed(Camera()),
+    return Response(generate_feed(app.camera),
             mimetype='multipart/x-mixed-replace; boundary=frame')
