@@ -7,4 +7,4 @@ app = Flask(__name__)
 app.config['DEBUG'] = True
 app.config['TIMEOUT'] = 18000 # 30 minutes
 
-import routes
+import feed.routes
